@@ -1,0 +1,414 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Remove this rule on your HTML elements as you start to fill them with content*/
+
+.box-color {
+	color: #fff;
+	background: #000;
+	text-align: center;
+	margin: 0;
+}
+
+/*basic reset*/
+
+/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+
+div,p,body,header,footer,section,article,nav { 
+	margin: 0; 
+	padding: 0; 
+}	
+
+img { 
+	border: none; /*Remove border if image is a link*/
+	margin: 0; 
+	padding: 0; 
+}
+
+/*html selectors*/
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+}
+
+/* Remove underlines from links */
+
+a {
+	text-decoration: none;
+}
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden {
+	display: none;
+}
+
+
+/*Common page elements  */
+
+/*This is essentially a box that we place the whole site in.  
+We center the box using margin 0 auto and give it a fixed width of 428px.
+428px would fit some phones. Sizes will vary depending on the projects
+you work on and the intended audience, we may go as low as 320px */
+
+#container {
+	margin: 0 auto;
+	width: 428px;
+}
+
+/* this is our grid based off of our XD file */
+.grid-con {
+	display: grid;
+	grid-template-columns: repeat(4, 85px);
+	grid-column-gap: 16px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#header-con {
+	background-color: #ddd;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#header-logo {
+	grid-column: 1/3;
+}
+
+#mobile-nav {
+	grid-column: 4/-1;
+	margin-top: 10px;
+	font-size: medium;
+
+}
+
+
+
+#mobile-nav li{
+	list-style: none;
+}
+
+.burger {
+	height: 16px;
+	background-color:#aaa;
+	display: block;
+	margin-bottom: 10px;
+}
+
+/* index page */
+
+#hero-con {
+	background-color: #aaaaaa;
+	background: url("https://via.placeholder.com/428x458");
+	height: 458px;
+}
+
+#hero-text {
+	grid-column: 1/-1;
+	/* Remove as content will dictate height */
+	height: 380px;
+	margin-top: 20px;
+}
+
+#hero-text h1{
+	color: #a1890d;
+}
+
+#hero-text p{
+	margin-top: 30px;
+	font-size:medium;
+}
+
+.box-color-donate {
+	color: #fff;
+	background: #ff000f;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.image-slider-con {
+	background-color: #dddddd;
+	/* Remove as content will dictate height */
+	height: 640px;
+	position: relative;
+}
+#product1 {
+	grid-column: 1/5;
+	/* Remove as content will dictate height */
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 300px;
+	margin: auto;
+	text-align: center;
+	font-family: arial;
+}
+
+.price {
+	color: grey;
+	font-size: 22px;
+  }
+
+  #product1 button {
+	border: none;
+	outline: 0;
+	padding: 12px;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+  }
+
+#product1 button:hover {
+	opacity: 0.7;
+  }
+
+.image-slider-con h2 {
+	background-color: #ffffff;
+	text-align: center;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	margin: 0;
+}
+
+.mobile-slider-left {
+	position: absolute;
+	left: 0;
+	font-size: 120px;
+	color:#fff;
+	top: 200px;
+}
+
+.mobile-slider-right {
+	position: absolute;
+	right: 0;
+	font-size: 120px;
+	color:#fff;
+	top: 200px;
+}
+
+#about-us-con h2 {
+	background-color: #ffffff;
+	text-align: center;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	margin: 0;
+}
+
+#about-us-text-con {
+	background-color: #dddddd;
+}
+
+#about-us-text {
+	grid-column: 1/-1;
+	/* Remove as content will dictate height */
+	height: 580px;
+	margin-top: 70px;
+	margin-bottom: 40px;
+}
+
+#about-us-text h3{
+	color: #a1890d;
+	font-size: large;
+}
+
+#about-us-text P{
+	margin-top: 100px;
+	font-size: medium;
+}
+
+
+.about-us-photo {
+	grid-column: 1/-1;
+	display: block;
+	margin: 20px auto 0 auto;
+}
+
+#contact-us-con {
+	margin-top: 100px;
+	margin-bottom: 60px;
+}
+
+#contact-text {
+	grid-column: 1/-1;
+	/* Remove as content will dictate height */
+	height: 350px;
+	margin-bottom: 150px;
+}
+
+#contact-text h2{
+	color:#a1890d;
+	font-size: x-large;
+}
+
+#contact-text p{
+	margin-top: 30px;
+	font-size: medium;
+}
+
+#contact-text h3{
+	margin-top: 100px;
+	font-size: small;
+	background: red;
+}
+
+#contact-form {
+	grid-column: 1/-1;
+	/* Remove as content will dictate height */
+	height: 580px;
+}
+#contact-form hr{
+	border: solid 1px #a1890d;
+}
+
+#contact-form label{
+	font-size: x-large;
+	color:#a1890d;
+	
+}
+
+#label-h2 {
+	color:#a1890d;
+	background:#171717;
+	padding: 6px;
+	margin-top: 0px;
+	font-size: x-large;
+	margin-top: 15px;
+ }
+ 
+
+/*Common page elements  */
+
+#footer-con {
+	height: 410px;
+	background-color: #aaa;
+}
+
+#social-nav li{
+	list-style: none;
+}
+
+#footer-box {
+	margin-top: 40px;
+	/* Remove as content will dictate height */
+	height:45px;
+	grid-column: 1/3;
+	background-color: #ddd;
+}
+
+#footer-newsletter {
+	margin-top: 100px;
+	/* Remove as content will dictate height */
+	height:100px;
+	grid-column: 1/-1;
+	background-color: #aaaaaa;
+}
+
+/* gallery page */
+
+#hero-gallery-con {
+	background-color: #aaaaaa;
+	background: url('../images/hero-gallery.jpg');
+	height: 458px;
+}
+
+#hero-gallery-text {
+	grid-column: 1/-1;
+	/* Remove as content will dictate height */
+	height: 250px;
+	margin-top: 100px;
+	background-color: #ff000f;
+	border:solid 2px green;
+}
+
+#hero-gallery-text h2{
+	background:white;
+	font-size:xx-large;
+	color: green;
+}
+
+#hero-gallery-text p{
+	font-size: large;
+	margin-top: -3px;
+}
+	
+
+
+#gallery-controls {
+	grid-column: 1/-1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+
+/*code for the products */
+
+#Figure5 {
+	grid-column: span 4 / span 4;
+	/* Remove as content will dictate height */
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 300px;
+	margin: auto;
+	text-align: center;
+	font-family: arial;
+	}
+					
+#Figure5 button {
+	border: none;
+	outline: 0;
+	padding: 12px;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+	}
+					  
+ #Figure5 button:hover {
+	opacity: 0.7;
+	 }
+
+.dot {
+	background-color: #dddddd;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	margin: 5px;
+  }
+
+#gallery h2 {
+	text-align: center;
+	grid-column: 1/-1;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.gallery-box {
+	grid-column: 1/-1;
+	background-color: #aaaaaa;
+	/* Remove as content will dictate height */
+	height: 507px;
+	margin-bottom: 20px;
+}
+
+#footer-newsletter2 {
+	margin-top: 20px;
+	height:40px;
+	grid-column: 1/3;
+	background-color: #aaaaaa;
+}
+
+#footer-newsletter2	ul{
+	list-style: none;
+	display: inline;
+
+}
+
+#footer-newsletter p{
+	margin-right: 30px;
+	margin-top: 3px;
+	font-size: xx-small;
+}
